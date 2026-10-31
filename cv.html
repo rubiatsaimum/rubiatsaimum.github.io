@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae | Rubiat Saimum</title>
+  <meta name="description" content="Curriculum vitae of Rubiat Saimum, PhD student in Political Studies at Queen’s University.">
+  <meta name="author" content="Rubiat Saimum">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rubiatsaimum.com/cv.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .cv-page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 48px 28px 72px;
+    }
+    .cv-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 28px;
+    }
+    .cv-toolbar h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 500;
+    }
+    .cv-document {
+      display: grid;
+      gap: 26px;
+      justify-items: center;
+    }
+    .cv-sheet {
+      margin: 0;
+      width: min(100%, 980px);
+    }
+    .cv-sheet img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 28px rgba(0,0,0,.06);
+    }
+    @media (max-width: 700px) {
+      .cv-page { padding: 28px 18px 48px; }
+      .cv-toolbar { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Rubiat Saimum home"><img src="rs-monogram.png" alt="RS monogram logo"></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Primary navigation">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="talks.html">Talks &amp; Media</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="cv-page">
+  <div class="cv-toolbar">
+    <h1>Curriculum Vitae</h1>
+    <a class="button secondary" href="Rubiat_Saimum_CV.pdf" download>Download PDF</a>
+  </div>
+
+  <div class="cv-document" aria-label="Rubiat Saimum curriculum vitae">
+    <figure class="cv-sheet"><img src="cv-pages/page-1.png" alt="Rubiat Saimum curriculum vitae, page 1" loading="eager"></figure>
+    <figure class="cv-sheet"><img src="cv-pages/page-2.png" alt="Rubiat Saimum curriculum vitae, page 2" loading="lazy"></figure>
+    <figure class="cv-sheet"><img src="cv-pages/page-3.png" alt="Rubiat Saimum curriculum vitae, page 3" loading="lazy"></figure>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
